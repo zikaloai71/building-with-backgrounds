@@ -1,0 +1,143 @@
+/* reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*header*/
+.container{
+width: 100%;
+height: 100vh;
+background-image: url(../images/your_verse_hero.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4));
+background-repeat: no-repeat;
+background-size: 100% 100%;
+padding-top: 4%;
+
+}
+/*header-navigator*/
+nav{
+    width: 80%;
+    height: 5vh;
+    margin: auto ;
+    background: linear-gradient(gray 2%, rgba(0, 0, 0, 0.411) 40% , rgba(0, 0, 0, 0.664) 90% , rgb(128, 128, 128) 100%);
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    
+    border-right: 2px solid #828281;
+    align-self: center;
+    flex: 1;
+}
+nav ul li a{color: white;
+font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 18px;
+}
+
+.search-bar{
+    border-right: 0px;
+    flex:2;
+    color: white;
+
+}
+nav ul li input {
+  width: 100%;
+  margin-left: 9%;
+  border-radius: 30px;
+  outline: 0px;
+  background: linear-gradient(gray 2%, rgba(0, 0, 0, 0.075) 30% , rgba(0, 0, 0, 0.288) 50% , rgb(128, 128, 128) 100%);
+}
+.positioning{
+    position: relative;
+    right:60%;
+    top:3px;
+    font-size: 15px;   
+}
+/*header-paragraph*/
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+   font-size: 50px;
+   font-weight: normal;
+   font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+header p{
+   color: white;
+    font-size: 20px;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    max-width: 50ch;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+    line-height: 1.5;
+
+}
+p i {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 10px;
+    color: white;
+}
+/*main*/
+main div {
+    display: flex;
+    margin-top: 2px;
+}
+main div img {
+    flex:1;
+    min-width: 80px;
+}
+/*footer*/
+footer{
+    display: grid;
+    width: 90%;
+    margin:20px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"f1 f2"
+                        "f3  ." ;
+    grid-row-gap:15px ;
+   
+}
+footer a {
+    color: rgba(0, 0, 255, 0.5);
+    border-right: 1px solid gray;
+    padding-right: 3px;
+}
+footer span{
+    grid-area: f1;
+}
+footer ul {
+    grid-area: f2;
+}
+footer p {
+
+    grid-area: f3;
+}
+
+.border-right{
+    border-right: 0px;
+}
+a img {
+    width:30px;
+    height: 15px;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
